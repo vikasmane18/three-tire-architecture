@@ -34,22 +34,22 @@ It follows the classic model of **Presentation Layer → Application Layer → D
 ![VPC and Subnets](image/vpc.png)
 ![VPC and Subnets](image/subnets.png)
 ![VPC and Subnets](image/route%20table.png)
+![VPC and Subnets](image/interenet%20gateway.png)
+
 ---
 
 
-### 3. **Application Layer**
+### 2. **Application Layer**
 - Launched **EC2 Instances** in Private Subnets  
 - Installed **Apache/PHP** and deployed `form.html` + `submit.php`  
 
   
 ![EC2 Instances](image/instance.png)
 ![VPC and Subnets](image/templates.png)
-![VPC and Subnets](image/load%20balencer.png)
-![VPC and Subnets](image/templates.png)
 ![VPC and Subnets](image/targetgroup.png)
 ---
 
-### 4. **Database Layer**
+### 3. **Database Layer**
 - Launched **RDS MySQL Database** inside Private Subnet  
 - Connected EC2 Application to Database securely  
 
@@ -60,16 +60,17 @@ It follows the classic model of **Presentation Layer → Application Layer → D
 
 ---
 
-### 5. **Load Balancer Layer**
+### 4. **Load Balancer Layer**
 - Created an **Application Load Balancer** in Public Subnet  
 - Registered EC2 instances in Target Group  
 
 
 ![Load Balancer](image/load%20balencer.png)
+![VPC and Subnets](image/autoscalling.png)
 
 ---
 
-### 6. **Testing & Validation**
+### 5. **Testing & Validation**
 - Accessed Application via **Load Balancer DNS**  
 - Submitted form → Data successfully stored in RDS  
 
