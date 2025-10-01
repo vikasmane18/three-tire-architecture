@@ -55,7 +55,6 @@ It follows the classic model of **Presentation Layer → Application Layer → D
 
  
 ![RDS Database](image/database.png)
-![VPC and Subnets](image/templates.png)
 ![VPC and Subnets](image/subnet%20group.png)
 
 ---
