@@ -33,17 +33,9 @@ It follows the classic model of **Presentation Layer → Application Layer → D
  
 ![VPC and Subnets](image/vpc.png)
 ![VPC and Subnets](image/subnets.png)
-
+![VPC and Subnets](image/route%20table.png)
 ---
 
-### 2. **Security Setup**
-- Created **Security Groups** for Load Balancer, EC2, and RDS
-- Configured **NACLs** for subnet-level security  
-
-
-![Security Groups](screenshots/security-groups.png)
-
----
 
 ### 3. **Application Layer**
 - Launched **EC2 Instances** in Private Subnets  
@@ -51,7 +43,10 @@ It follows the classic model of **Presentation Layer → Application Layer → D
 
   
 ![EC2 Instances](image/instance.png)
-
+![VPC and Subnets](image/templates.png)
+![VPC and Subnets](image/load%20balencer.png)
+![VPC and Subnets](image/templates.png)
+![VPC and Subnets](image/targetgroup.png)
 ---
 
 ### 4. **Database Layer**
@@ -60,6 +55,8 @@ It follows the classic model of **Presentation Layer → Application Layer → D
 
  
 ![RDS Database](image/database.png)
+![VPC and Subnets](image/templates.png)
+![VPC and Subnets](image/subnet%20group.png)
 
 ---
 
